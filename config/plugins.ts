@@ -9,7 +9,13 @@ export default ({ env }: { env: (key: string) => string }) => ({
       },
       actionOptions: {
         upload: {
-          folder: "strapi_uploads", // Optional: Organize uploads in a Cloudinary folder
+          folder: "foster_flooring_uploads", // Your project-specific folder
+          // Enable transformations for thumbnails
+          transformations: {
+            responsive: true,
+            format: "auto",
+            quality: "auto",
+          },
         },
         delete: {},
       },

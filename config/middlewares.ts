@@ -1,20 +1,22 @@
-  module.exports = ({ env }) => [
-  'strapi::logger',
-    "strapi::errors",
-      {
-        name: "strapi::security",
-        config: {
-          contentSecurityPolicy: {
-            directives: {
-              "connect-src": ["'self'", "http:", env("SUPABASE_URL")], // Adjust as needed
-              "img-src": ["'self'", "data:", "blob:", env("SUPABASE_URL"), "https://dl.airtable.com"], // Adjust as needed
-            },
-          },
+module.exports = [
+  'strapi::errors',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'connect-src': ["'self'", 'https:'],
+          'img-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
+          'media-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
+          upgradeInsecureRequests: null,
         },
       },
-  'strapi::security',
+    },
+  },
   'strapi::cors',
   'strapi::poweredBy',
+  'strapi::logger',
   'strapi::query',
   'strapi::body',
   'strapi::session',

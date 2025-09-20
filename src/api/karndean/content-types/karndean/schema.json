@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "home_pages",
+  "collectionName": "karndeans",
   "info": {
-    "singularName": "home-page",
-    "pluralName": "home-pages",
-    "displayName": "Home"
+    "singularName": "karndean",
+    "pluralName": "karndeans",
+    "displayName": "Karndean"
   },
   "options": {
     "draftAndPublish": true
@@ -14,23 +14,10 @@
     "text1": {
       "type": "text"
     },
-    "about_text": {
+    "text2": {
       "type": "text"
     },
-    "about_photo": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "mission_text": {
-      "type": "text"
-    },
-    "mission_photo": {
+    "photo1": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

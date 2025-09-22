@@ -12,10 +12,10 @@
   "pluginOptions": {},
   "attributes": {
     "text1": {
-      "type": "string"
+      "type": "text"
     },
     "text2": {
-      "type": "string"
+      "type": "text"
     },
     "photo1": {
       "type": "media",
@@ -27,7 +27,7 @@
         "audios"
       ]
     },
-    "slideshow": {
+    "gallery": {
       "type": "media",
       "multiple": true,
       "allowedTypes": [

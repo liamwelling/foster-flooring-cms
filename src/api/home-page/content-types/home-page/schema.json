@@ -49,6 +49,16 @@
         "videos",
         "audios"
       ]
+    },
+    "photo1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

@@ -518,6 +518,7 @@ export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     mission_text: Schema.Attribute.Text;
+    photo1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
     text1: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;

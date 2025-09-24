@@ -1,9 +1,9 @@
-export default ({ env }) => ({
-  connection: {
-    client: 'postgres',
+module.exports = ({ env }) => ({
     connection: {
-      connectionString: env('DATABASE_URL'),
-      ssl: env.bool('DATABASE_SSL', false),
-    },
-  },
+        client: 'postgres',
+        connection: {
+            connectionString: env('DATABASE_PRIVATE_URL')
+        },
+        pool: { min: 0 }
+    }
 });

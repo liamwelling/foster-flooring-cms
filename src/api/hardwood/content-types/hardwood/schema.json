@@ -15,7 +15,7 @@
       "type": "text"
     },
     "text2": {
-      "type": "string"
+      "type": "text"
     },
     "photo1": {
       "type": "media",

@@ -479,7 +479,7 @@ export interface ApiHardwoodHardwood extends Struct.CollectionTypeSchema {
     photo1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
     text1: Schema.Attribute.Text;
-    text2: Schema.Attribute.String;
+    text2: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

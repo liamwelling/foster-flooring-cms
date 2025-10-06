@@ -27,19 +27,6 @@
         "audios"
       ]
     },
-    "mission_text": {
-      "type": "text"
-    },
-    "mission_photo": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "gallery": {
       "type": "media",
       "multiple": true,
@@ -51,6 +38,16 @@
       ]
     },
     "photo1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "family_photo": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

@@ -56,6 +56,19 @@
         "videos",
         "audios"
       ]
+    },
+    "your_flooring_professionals_text": {
+      "type": "text"
+    },
+    "your_flooring_professionals_photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

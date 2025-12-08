@@ -523,6 +523,10 @@ export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    your_flooring_professionals_photo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    your_flooring_professionals_text: Schema.Attribute.Text;
   };
 }
 
